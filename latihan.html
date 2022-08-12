@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Vue 010</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="jumbotron text-center">
+            <h1>Bootstrap 4</h1>
+            <p>Latihan010 - Komunikasi Komponen Vue.js Collapsible Card dan Modal</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-primary" @click="showCard = !showCard">{{ showCard ? "Tutup Card" : "Tampilkan
+                        Card" }}</button>
+
+                    <komponen-card nama="Varian Hermianto" whatsapp="08-222-666-777-8">
+                        Orang Makassar yang sudah jatuh hati dan betah tinggal di Jogja.
+                    </komponen-card>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="latihan010.js"></script>
+</body>
+
+</html>
